@@ -1,3 +1,56 @@
+@import 'flowbite';
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-mulish; /* Đảm bảo rằng font 'mulish' đã được định nghĩa */
+}
+
+.style-address {
+  @apply mb-3 font-bold uppercase text-white;
+}
+
+/* style thẻ h2 của các section */
+.base_title {
+  @apply my-6 text-center text-3xl font-bold text-[#2582BD] lg:my-14 lg:text-4xl;
+}
+
+/* style các đầu mục của : Giá trị chúng tôi đem lại  */
+.sticker_check {
+  @apply my-2 flex items-center;
+}
+.sticker_describe {
+  @apply text-sm font-medium text-white lg:text-2xl overflow-hidden;
+}
+
+/* style các mục của : Thao tác 4 bước  */
+.operation_text {
+  @apply text-2xl font-bold text-blue-700;
+}
+.operation_img {
+  @apply m-auto w-[90%] p-4;
+}
+
+/* @Style logo các đối tác  */
+@keyframes slide {
+  from {
+    transform: translateX(-5%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* @ Pages Mô tả thông tin sản phẩm CheckID-ET100 */
+.table_body {
+  @apply border border-gray-300 bg-main-table p-3 text-left text-xl text-black;
+}
+.table_specification {
+  @apply border border-gray-300 p-2 text-left font-roboto text-sm; /* Đảm bảo rằng font 'roboto' đã được định nghĩa */
+}
+.table_item {
+  @apply border border-gray-300 bg-main-table/40 p-2 text-left font-roboto text-sm; /* Đảm bảo rằng font 'roboto' đã được định nghĩa */
+}

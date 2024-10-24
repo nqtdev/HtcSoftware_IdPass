@@ -4,8 +4,84 @@
   box-sizing: border-box;
 }
 body {
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
   position: relative;
 }
+.partner_scroll {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
 
+.partner_scroll:before,
+.partner_scroll:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  z-index: 1;
+}
+
+.partner_logo {
+  box-sizing: border-box;
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 1.25rem; */
+}
+
+.partner_scroll {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.partner_scroll:before,
+.partner_scroll:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  z-index: 1;
+}
+
+.partner_logo {
+  box-sizing: border-box;
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+/* @ Style nút cuộn lên đầu trang  */
+.button_scroll {
+  position: fixed;
+  bottom: 1rem;
+  right: 0.2rem;
+  z-index: 10;
+}
+.button_call {
+  position: fixed;
+  bottom: 12rem;
+  right: 0.2rem;
+  z-index: 10;
+}
+.button_mail {
+  position: fixed;
+  bottom: 5rem;
+  right: 0.2rem;
+  z-index: 10;
+}
+
+.__react_modal_image__header {
+  background-color: transparent !important;
+}
+.ant-tabs-nav {
+  margin: auto !important;
+}
+#collapse-demo-collapsible .ant-space {
+  width: 100%;
+}
