@@ -26,7 +26,7 @@ const Procedure = () => {
         },
       }}
     >
-      <div className='w-3/4 m-auto'>
+      <div className='xl:w-3/4 w-full m-auto'>
         <Steps
           current={current}
           onChange={setCurrent}
