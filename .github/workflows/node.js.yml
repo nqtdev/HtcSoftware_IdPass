@@ -31,5 +31,5 @@ jobs:
 
       - name: Deploy to VPS
         run: |
-          scp -r build/* user@10.8.0.46:/var/www/idpass.vn
-          ssh user@10.8.0.46 "cd /var/www/idpass.vn && pm2 restart your-app-name || pm2 start npm --name your-app-name -- start"
+          scp -r build/* htcsw@10.8.0.46:/var/www/idpass.vn
+          ssh htcsw@10.8.0.46 "cd /var/www/idpass.vn && pm2 restart your-app-name || pm2 start npm --name your-app-name -- start"
