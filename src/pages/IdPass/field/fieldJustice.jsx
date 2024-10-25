@@ -1,7 +1,7 @@
 import img_fieldJustice from 'assets/homePage/field/justice.svg'
 const FieldJustice = () => {
   return (
-    <div className='flex flex-row'>
+    <div className='flex flex-col lg:flex-row'>
       <div className='basis-1/2 flex justify-center items-center'>
         <ul>
           <li>

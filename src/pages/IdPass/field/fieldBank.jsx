@@ -2,7 +2,7 @@ import img_fieldBank from 'assets/homePage/field/bank.svg'
 
 const FieldBank = () => {
   return (
-    <div className='flex flex-row'>
+    <div className='flex flex-col lg:flex-row'>
       <div className='basis-1/2 flex justify-center items-center'>
         <ul>
           <li>
