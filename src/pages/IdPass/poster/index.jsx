@@ -45,7 +45,7 @@ const PosterPage = () => {
           <img className='w-[80%] m-auto' src={Banner} alt='logo banner' />
         </div>
       </section>
-      <section className='m-auto lg:w-4/5 mt-20'>
+      <section className='m-auto lg:w-[85%] mt-20'>
         <div data-aos='zoom-in' data-aos-duration='1000' className='mt-10 '>
           <h2 className='base_title'>Tính năng của Rar Chip Tootkit</h2>
         </div>

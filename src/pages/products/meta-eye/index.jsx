@@ -7,7 +7,7 @@ import SlideProduct from './data/SlideProduct'
 import DeviceParameters from './data/DeviceParameters'
 import ShowProducts from './data/ShowProducts'
 
-import imgProduct_eYe from 'assets/image_products/meta_eye/main.webp'
+import imgProduct_eYe from 'assets/image_products/meta-eye/main.webp'
 import ButtonContact from 'layout/buttons/ButtonContact'
 
 const MetaEye = () => {

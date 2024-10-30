@@ -5,9 +5,18 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply font-mulish; /* Đảm bảo rằng font 'mulish' đã được định nghĩa */
+@layer base {
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    overflow-x: hidden;
+  }
 }
+/* body {
+  @apply font-mulish;
+} */
 
 .style-address {
   @apply mb-3 font-bold uppercase text-white;

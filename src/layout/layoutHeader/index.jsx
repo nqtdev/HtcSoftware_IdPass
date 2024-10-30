@@ -75,7 +75,7 @@ const LayoutHeader = () => {
                 {/* CheckID-SR */}
                 <Dropdown.Item
                   as={NavLink}
-                  to='/products/checkid-sr'
+                  to='/products/check-id-sr'
                   onClick={closeMenu} // Đóng menu khi nhấp vào
                 >
                   <Button gradientDuoTone='purpleToBlue' className='w-[12rem]'>
@@ -86,11 +86,20 @@ const LayoutHeader = () => {
                 {/* CheckID-ET100 */}
                 <Dropdown.Item
                   as={NavLink}
-                  to='/products/checkid-et100'
+                  to='/products/check-id-et100'
                   onClick={closeMenu} // Đóng menu khi nhấp vào
                 >
                   <Button gradientDuoTone='purpleToBlue' className='w-[12rem]'>
                     CheckID-ET100
+                  </Button>
+                </Dropdown.Item>
+                <Dropdown.Item
+                  as={NavLink}
+                  to='/products/check-id-r301'
+                  onClick={closeMenu} // Đóng menu khi nhấp vào
+                >
+                  <Button gradientDuoTone='purpleToBlue' className='w-[12rem]'>
+                    CheckID-R301
                   </Button>
                 </Dropdown.Item>
 
