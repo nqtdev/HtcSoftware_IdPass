@@ -8,7 +8,7 @@ import SmartCard from 'assets/image_products/icon_function/smartCard.png'
 import NFC from 'assets/image_products/icon_function/NFC.png'
 import Camera from 'assets/image_products/icon_function/Camera.png'
 import MRZ from 'assets/image_products/icon_function/MRZ.png'
-import imgProduct_SR from 'assets/image_products/check-id-sr/sr_main.webp'
+import imgProduct_SR from 'assets/image_products/check-id-sr/banner.png'
 import TabShowDevice from './tabShowDevice'
 import ButtonContact from 'layout/buttons/ButtonContact'
 
