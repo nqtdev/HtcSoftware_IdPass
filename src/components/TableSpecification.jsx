@@ -1,13 +1,10 @@
-// @ Bảng hiển thị thông số kỹ thuật của sản phẩm
+// @ Bảng hiển thị Thông số kỹ thuật thiết bị của sản phẩm
 import React from 'react'
 import PropTypes from 'prop-types'
 
 const TableSpecification = ({data}) => {
   return (
     <section>
-      <div>
-        <h2 className='base_title'>Thông số kỹ thuật</h2>
-      </div>
       <div className='m-auto overflow-x-auto lg:w-3/4'>
         <table className='min-w-full table-auto'>
           <thead className='border-collapse border border-slate-500'>

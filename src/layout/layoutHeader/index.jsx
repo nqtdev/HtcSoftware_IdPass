@@ -102,6 +102,15 @@ const LayoutHeader = () => {
                     CheckID-R301
                   </Button>
                 </Dropdown.Item>
+                <Dropdown.Item
+                  as={NavLink}
+                  to='/products/check-id-hn212'
+                  onClick={closeMenu} // Đóng menu khi nhấp vào
+                >
+                  <Button gradientDuoTone='purpleToBlue' className='w-[12rem]'>
+                    CheckID-HN202
+                  </Button>
+                </Dropdown.Item>
 
                 {/* Meta eYe */}
                 <Dropdown.Item

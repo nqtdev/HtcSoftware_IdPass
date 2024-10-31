@@ -6,6 +6,7 @@ import CheckIdEt from 'pages/products/check-id-et'
 import MetaEye from 'pages/products/meta-eye'
 import IdPassPage from 'pages/IdPass'
 import CheckIdRt from 'pages/products/check-id-r301'
+import CheckIdHn from 'pages/products/check-id-hn202'
 
 const Routers = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const Routers = createBrowserRouter([
           {
             path: 'check-id-r301',
             element: <CheckIdRt />,
+          },
+          {
+            path: 'check-id-hn212',
+            element: <CheckIdHn />,
           },
         ],
       },

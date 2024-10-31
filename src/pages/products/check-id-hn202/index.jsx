@@ -1,17 +1,19 @@
 import TableSpecification from 'components/TableSpecification'
 
-import DeviceParameters from './data/DeviceParameters'
+import {DeviceParameters, DeviceParametersCamera} from './data/DeviceParameters'
 
 import SlideProduct from './data/SlideProduct'
 import SmartCard from 'assets/image_products/icon_function/smartCard.png'
 import NFC from 'assets/image_products/icon_function/NFC.png'
 import RickPorts from 'assets/image_products/icon_function/RichPort.png'
-import imgProduct_RT from 'assets/image_products/check-id-r301/banner.png'
+import Camera from 'assets/image_products/icon_function/Camera.png'
+
+import imgProduct_HN from 'assets/image_products/check-id-212/banner.png'
 import SlideShowSwiper from 'components/SlideShowSwiper'
 import ButtonContact from 'layout/buttons/ButtonContact'
 import OtherProduct from 'components/otherProducts'
-import MobileIDView from 'components/softwareInterface/mobileid'
-const CheckIdRt = () => {
+import HanelView from 'components/softwareInterface/hanel'
+const CheckIdHn = () => {
   return (
     <div className='App'>
       {/* Banner sản phẩm  */}
@@ -21,18 +23,18 @@ const CheckIdRt = () => {
             <div className='mb-[5%]'>
               <h1 className='xxl:text-[5rem] font-roboto text-5xl font-black text-white xl:text-[4rem]'>
                 CCID Smartcard Reader <br />
-                (R301-C11)
+                (HN-212)
               </h1>
             </div>
             <div>
-              <i className='font-roboto text-white xl:text-2xl'>
+              {/* <i className='font-roboto text-white xl:text-2xl'>
                 Đầu Đọc Thẻ Thông Minh Nhỏ Gọn, Dễ Sử Dụng, Hiệu Quả Chi Phí Cho PC, Hỗ Trợ Thẻ ISO
                 7816 Class A, B và C.
-              </i>
+              </i> */}
             </div>
           </div>
           <div className='md:w-1/2'>
-            <img className='m-auto' src={imgProduct_RT} alt='imgProduct_RT' />
+            <img className='m-auto' src={imgProduct_HN} alt='imgProduct_HN' />
           </div>
         </div>
       </section>
@@ -56,11 +58,12 @@ const CheckIdRt = () => {
             </div>
 
             <p className='text-left font-roboto text-main-colors'>
-              R301-C11 phù hợp với khách hàng có quan tâm chủ yếu đến vấn đề an ninh và đáp ứng nhu
-              cầu về một giải pháp linh hoạt cho xác thực ID, thương mại điện tử, thanh toán điện
-              tử, bảo mật thông tin và kiểm soát truy cập. <br />
-              R301-C11 và dòng đầu đọc thẻ thông minh còn lại cung cấp cho mỗi khách hàng một giải
-              pháp hoàn chỉnh cho mọi cách sử dụng.
+              - CheckID-HN212 đã đạt kết quả thử nghiệm QCVN 55:2023/BTTT; QCVN 96:2025/BTTT. <br />{' '}
+              - Đạt khả năng chịu nhiệt theo TCVN 7699-2-2:2021; TCVN 4255:2008; <br /> - Đạt khả
+              năng chống chạm vào bộ phận mang điện IEC 60529:2001; khả năng chống xâm nhập của nước
+              ip41. <br /> - Đạt được yêu cầu kỹ thuật và các tiêu chuẩn, quy chuẩn Việt Nam theo
+              quyết định số 1091/QD-BTTT ký ngày 01.07.2024. <br /> - Đạt được yêu cầu dán tem của
+              Trung tâm RAR-C06-BCA
             </p>
           </div>
           <div className='mt-3'>
@@ -83,6 +86,14 @@ const CheckIdRt = () => {
               <li className='m-auto cursor-pointer'>
                 <img
                   className='mb-1 cursor-pointer rounded-md border p-1'
+                  src={Camera}
+                  alt='Camera'
+                />
+                <p className='text-center font-roboto text-sm text-main-colors'>Camera</p>
+              </li>
+              <li className='m-auto cursor-pointer'>
+                <img
+                  className='mb-1 cursor-pointer rounded-md border p-1'
                   src={RickPorts}
                   alt='RickPorts'
                 />
@@ -93,15 +104,19 @@ const CheckIdRt = () => {
           </div>
         </div>
       </section>
-      <section>
-        <MobileIDView />
-      </section>
       {/* Thông số kỹ thuật thiết bị  */}
+      <section>
+        <HanelView />
+      </section>
       <section>
         <div>
           <h2 className='base_title'>Thông số kỹ thuật thiết bị</h2>
         </div>
         <TableSpecification data={DeviceParameters} />
+        <div>
+          <h2 className='base_title'>Thông số kỹ thuật thiết bị Camera</h2>
+        </div>
+        <TableSpecification data={DeviceParametersCamera} />
       </section>
       {/* Xem thêm sản phẩm */}
       <section>
@@ -110,4 +125,4 @@ const CheckIdRt = () => {
     </div>
   )
 }
-export default CheckIdRt
+export default CheckIdHn

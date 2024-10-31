@@ -1,14 +1,12 @@
-import SlideSwiper from 'components/SlideSwiper'
 import TableSpecification from 'components/TableSpecification'
 import SlideShowSwiper from 'components/SlideShowSwiper'
-import SlideSwiperConfig from 'components/SlideSwiperConfig'
 
 import SlideProduct from './data/SlideProduct'
 import DeviceParameters from './data/DeviceParameters'
-import ShowProducts from './data/ShowProducts'
 
 import imgProduct_eYe from 'assets/image_products/meta-eye/main.webp'
 import ButtonContact from 'layout/buttons/ButtonContact'
+import OtherProduct from 'components/otherProducts'
 
 const MetaEye = () => {
   return (
@@ -27,7 +25,7 @@ const MetaEye = () => {
             </div>
           </div>
           <div className='md:w-1/2'>
-            <img src={imgProduct_eYe} alt='imgProduct_eYe' />
+            <img className='m-auto' src={imgProduct_eYe} alt='imgProduct_eYe' />
           </div>
         </div>
       </section>
@@ -68,15 +66,17 @@ const MetaEye = () => {
           </div>
         </div>
       </section>
-      {/* Thông số kỹ thuật  */}
+
+      {/* Thông số kỹ thuật thiết bị  */}
       <section>
+        <div>
+          <h2 className='base_title'>Thông số kỹ thuật thiết bị</h2>
+        </div>
         <TableSpecification data={DeviceParameters} />
       </section>
       {/* Xem thêm sản phẩm */}
       <section>
-        <div className='m-auto w-3/4'>
-          <SlideSwiper slides={ShowProducts} SlideSwiperConfig={SlideSwiperConfig} />
-        </div>
+        <OtherProduct />
       </section>
     </div>
   )

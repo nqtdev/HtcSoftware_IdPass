@@ -1,8 +1,6 @@
-import SlideSwiper from 'components/SlideSwiper'
 import TableSpecification from 'components/TableSpecification'
-import SlideSwiperConfig from 'components/SlideSwiperConfig'
+
 import DeviceParameters from './data/DeviceParameters'
-import ShowProducts from './data/ShowProducts'
 
 import SmartCard from 'assets/image_products/icon_function/smartCard.png'
 import NFC from 'assets/image_products/icon_function/NFC.png'
@@ -11,6 +9,8 @@ import MRZ from 'assets/image_products/icon_function/MRZ.png'
 import imgProduct_SR from 'assets/image_products/check-id-sr/banner.png'
 import TabShowDevice from './tabShowDevice'
 import ButtonContact from 'layout/buttons/ButtonContact'
+import OtherProduct from 'components/otherProducts'
+import MobileIDView from 'components/softwareInterface/mobileid'
 
 const CheckIdSr = () => {
   return (
@@ -32,7 +32,7 @@ const CheckIdSr = () => {
             </div>
           </div>
           <div className='md:w-1/2'>
-            <img src={imgProduct_SR} alt='imgProduct_SR' />
+            <img className='m-auto' src={imgProduct_SR} alt='imgProduct_SR' />
           </div>
         </div>
       </section>
@@ -96,15 +96,19 @@ const CheckIdSr = () => {
           </div>
         </div>
       </section>
-      {/* Thông số kỹ thuật  */}
       <section>
+        <MobileIDView />
+      </section>
+      {/* Thông số kỹ thuật thiết bị  */}
+      <section>
+        <div>
+          <h2 className='base_title'>Thông số kỹ thuật thiết bị</h2>
+        </div>
         <TableSpecification data={DeviceParameters} />
       </section>
       {/* Xem thêm sản phẩm */}
       <section>
-        <div className='m-auto w-3/4'>
-          <SlideSwiper slides={ShowProducts} SlideSwiperConfig={SlideSwiperConfig} />
-        </div>
+        <OtherProduct />
       </section>
     </div>
   )
