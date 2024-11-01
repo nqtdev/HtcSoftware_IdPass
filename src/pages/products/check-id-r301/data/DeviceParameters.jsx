@@ -1,15 +1,15 @@
 // @ Cấu hình data thông số thiết bị
 const DeviceParameters = [
   {
-    itemA: 'Interface',
+    itemA: 'Cổng kết nối',
     specificationA: 'USB 2.0 Type A or Type C interface (12Mbps)',
-    itemB: 'Working Temperature',
+    itemB: 'Nhiệt độ làm việc',
     specificationB: '0°C ~ 60 °C',
   },
   {
-    itemA: 'Power Supply',
+    itemA: 'Đầu vào',
     specificationA: 'USB port 3 ~ 5V DC',
-    itemB: 'Storage Temperature',
+    itemB: 'Nhiệt độ bảo quản',
     specificationB: '-20°C ~ 85°C',
   },
   {
@@ -20,48 +20,48 @@ const DeviceParameters = [
     specificationB: '500,000 hours',
   },
   {
-    itemA: 'Working Current',
-    specificationA: '≤ 12mA without card plugged < 50mA with card plugged',
-    itemB: 'Connector Cable',
+    itemA: 'Điện năng tiêu thụ',
+    specificationA: 'Trạng thái chờ < 12mA \nTrạng thái hoạt động < 50mA',
+    itemB: 'Dây kết nối',
     specificationB: '150cm (59.1")',
   },
   {
-    itemA: 'Card Slot',
-    specificationA: 'ISO7816-3 standard slot >300,000 times plug/unplug',
-    itemB: 'Material',
-    specificationB: '	ABS+PC',
+    itemA: 'Khe cắm thẻ',
+    specificationA: 'ISO7816-3 khe cắm tiêu chuẩn, độ bền trên 300.000 lượt thao tác',
+    itemB: 'Vật liệu',
+    specificationB: 'Nhựa	ABS+PC',
   },
   {
     itemA: 'Hardware Security',
     specificationA:
       'Support Card short circuit protection \nBuild in short-circuited / over-voltage protection',
-    itemB: 'Color',
-    specificationB: 'Black',
+    itemB: 'Màu sắc',
+    specificationB: 'Đen',
   },
   {
-    itemA: 'Supported OS',
+    itemA: 'Hệ điều hành hỗ trợ',
     specificationA:
       'Windows 2000 / XP / Server 2003 / Vista / Server 2008 / \nServer 2008 R2 / Server 2012 / Server 2012 R2 / 7 / 8 / \n8.1 / 10, Linux, macOS, Solaris, Android 5.0+ (OTG)',
-    itemB: 'Size',
+    itemB: 'Kích thước (Dài x Rộng x Cao)',
     specificationB: '67 × 57.5 × 12.5 mm',
   },
   {
-    itemA: 'Certification',
+    itemA: 'Chứng nhận',
     specificationA:
       'ISO9001 / ISO14001 / CE / FCC / RoHS / EMV Level 1 / ICP-Brasil / Microsoft WHQL, EN60950 / IEC60950, WEEE,REACH',
-    itemB: 'Card Clock Frequency',
+    itemB: 'Tần số làm việc',
     specificationB: '5MHz ~ 12MHz',
   },
   {
     itemA: 'Firmware',
     specificationA: 'OEM firmware',
-    itemB: 'Warranty',
-    specificationB: 'Two-year warranty',
+    itemB: 'Bảo hành',
+    specificationB: 'liên hệ',
   },
   {
-    itemA: 'Humidity',
-    specificationA: '≤90% (non-condensed)',
-    itemB: 'Transmission Speed',
+    itemA: 'Số khe cắm thẻ',
+    specificationA: '1',
+    itemB: 'Trọng lượng',
     specificationB: '50g',
   },
 ]

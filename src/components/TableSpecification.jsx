@@ -9,10 +9,10 @@ const TableSpecification = ({data}) => {
         <table className='min-w-full table-auto'>
           <thead className='border-collapse border border-slate-500'>
             <tr>
-              <th className='table_body '>Items</th>
-              <th className='table_body '>Specification</th>
-              <th className='table_body'>Items</th>
-              <th className='table_body '>Specification</th>
+              <th className='table_body '>Mục</th>
+              <th className='table_body '>Mô tả kỹ thuật</th>
+              <th className='table_body'>Mục</th>
+              <th className='table_body '>Mô tả kỹ thuật</th>
             </tr>
           </thead>
           <tbody>

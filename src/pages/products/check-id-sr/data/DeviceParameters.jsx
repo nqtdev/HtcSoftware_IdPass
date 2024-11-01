@@ -1,55 +1,55 @@
 // @ Cấu hình data thông số thiết bị
 const DeviceParameters = [
   {
-    itemA: 'Name',
-    specificationA: 'Slot load smart card scanner',
-    itemB: 'Security module',
+    itemA: 'Tên thiết bị',
+    specificationA: 'Máy quét thẻ thông minh',
+    itemB: 'Bảo mật ',
+    specificationB: 'Security module Embedded ID card security module (SAM) optional',
+  },
+  {
+    itemA: 'Công nghệ RF',
+    specificationA: 'Hỗ trợ ISO/IEC 14443 loại A/B',
+    itemB: 'Nguồn điện vào',
+    specificationB: 'DC 12V ± 5% 1500 mA',
+  },
+  {
+    itemA: 'Thông số quét',
+    specificationA: 'Độ phân giải 300 DPI \n Tốc độ quét 87mm/s',
+    itemB: 'Công suất tiêu thụ',
+    specificationB: 'Trạng thái chờ ≤ 190 mA \nTrạng thái hoạt động ≤1000 mA',
+  },
+  {
+    itemA: 'Loại thẻ sử dụng',
+    specificationA: 'Thẻ căn cước công dân Việt Nam ',
+    itemB: 'Điều kiện môi trường',
     specificationB:
-      'Security module Embedded ID card security module (SAM) optional'
+      'Hoạt động: 0°C - 50°C, 0°C - 90% RH (non-condense) \nBảo quản: -30°C - 60°C, 0°C - 95% RH (non-condense)',
   },
   {
-    itemA: 'RF technology',
-    specificationA: 'Support ISO/IEC 14443 Type A/B',
-    itemB: 'Power input',
-    specificationB: 'DC 12V ± 5% 1500 mA'
-  },
-  {
-    itemA: 'Scan spec',
-    specificationA: '300DPI double size full color 87mm/second',
-    itemB: 'Power consumption',
-    specificationB: 'Quiescent current ≤ 190 mA \nPeak current≤1000 mA'
-  },
-  {
-    itemA: 'Universal ID documentation type',
-    specificationA: 'Viet Nam national ID card',
-    itemB: 'Environment condition',
-    specificationB:
-      'Operation: 0°C - 50°C, 0°C - 90% RH (non-condense) \nStorage: -30°C - 60°C, 0°C - 95% RH (non-condense)'
-  },
-  {
-    itemA: 'Working frequency',
+    itemA: 'Tần số làm việc',
     specificationA: '13.56MHz ± 7kHz',
-    itemB: 'Net weight',
-    specificationB: 'About 450g'
+    itemB: 'Trọng lượng',
+    specificationB: 'Khoảng 450g',
   },
   {
-    itemA: 'Operation speed',
-    specificationA: '≤3 second (depending on card)',
-    itemB: 'RoHS standard',
-    specificationB: 'Conform to RoHS standard'
+    itemA: 'Tốc độ đọc',
+    specificationA: 'Chưa đến 3 giây (tuỳ theo thẻ)',
+    itemB: 'Tiêu chuẩn RoHS',
+    specificationB: 'Tuân thủ theo tiêu chuẩn RoHS',
   },
   {
-    itemA: 'Camera spec',
-    specificationA: '2.0M pixel 1080P resolution, fixed length, rotate angle',
-    itemB: 'Communicate interface',
-    specificationB: 'USB 2.0 high-speed interface'
+    itemA: 'Thông số máy ảnh',
+    specificationA:
+      'Camera có độ phân giải 2.0 megapixel, hỗ trợ video 1080P, có chiều dài ống kính cố định và khả năng xoay góc',
+    itemB: 'Cổng kết nối',
+    specificationB: 'Kết nối USB 2.0',
   },
   {
-    itemA: 'Platform',
+    itemA: 'Hệ điều hành hỗ trợ',
     specificationA: 'Windows',
-    itemB: 'Update',
-    specificationB: 'Support firmware update'
-  }
+    itemB: 'Cập nhật',
+    specificationB: 'Hỗ trợ cập nhật phần mềm từ xa',
+  },
 ]
 
 export default DeviceParameters
