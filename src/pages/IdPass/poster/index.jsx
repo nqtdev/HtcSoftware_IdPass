@@ -1,4 +1,4 @@
-import Banner from 'assets/homePage/banner.svg'
+import Banner from 'assets/homePage/banner.webp'
 import iconFeatureRead from 'assets/homePage/iconFeature/4.svg'
 import iconFeatureCheck from 'assets/homePage/iconFeature/1.svg'
 import iconFeatureVerify from 'assets/homePage/iconFeature/3.svg'
