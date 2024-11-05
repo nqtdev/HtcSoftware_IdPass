@@ -2,7 +2,6 @@ import {useState} from 'react'
 import {Dropdown, Navbar, Button} from 'flowbite-react'
 import {NavLink} from 'react-router-dom'
 import logo from 'assets/logo/logo_sw.png'
-import Apphtc from '/checkid_client_installer.zip'
 
 const LayoutHeader = () => {
   // Quản lý trạng thái mở/đóng của menu
@@ -127,7 +126,7 @@ const LayoutHeader = () => {
                 <Dropdown.Item onClick={closeMenu}>
                   {' '}
                   {/* Đóng menu khi nhấp vào */}
-                  <a href={Apphtc}>
+                  <a href='http://htcsoftware.vn/checkid_client_installer.zip'>
                     <Button gradientDuoTone='purpleToBlue' className='flex w-[12rem]'>
                       <div className='flex items-center'>
                         Download Plugin{' '}

@@ -4,7 +4,7 @@ const FieldTraffic = () => {
     <div className='flex flex-col lg:flex-row'>
       <div className='basis-1/2 flex justify-center items-center'>
         <ul>
-          <li>
+          <li className='font-mulish'>
             - Cấp Giấy phép lái xe trong các cuộc thi sát hạch: Kiểm tra và xách minh danh tính thí
             sinh tham gia cuộc thi sát hạch =&gt; Cấp Giấy phép lái xe đúng người, ngăn ngừa tình
             trạng thi hộ.

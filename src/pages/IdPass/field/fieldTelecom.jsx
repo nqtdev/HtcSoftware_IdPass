@@ -4,11 +4,11 @@ const FieldTelecom = () => {
     <div className='flex flex-col lg:flex-row'>
       <div className='basis-1/2 flex justify-center items-center'>
         <ul>
-          <li>
+          <li className='font-mulish'>
             - Quầy giao dịch, điểm, văn phòng giao dịch: kích hoạt thuê bao, thay đổi thuê bao (trả
             trước, trả sau), ...
           </li>
-          <li>
+          <li className='font-mulish'>
             - Tránh tình trạng lợi dụng thông tin của người khác để đăng ký, kích hoạt sim và sử
             dụng dịch vụ viễn thông sai mục đích. Hạn chế tình trạng Sim rác.
           </li>

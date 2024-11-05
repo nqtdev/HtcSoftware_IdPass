@@ -4,7 +4,7 @@ const FieldInsurance = () => {
     <div className='flex flex-col lg:flex-row'>
       <div className='basis-1/2 flex justify-center items-center'>
         <ul>
-          <li>
+          <li className='font-mulish'>
             - Đại lý, văn phòng đại diện bảo hiểm: Xác định đúng chủ thể Hợp đồng và các quyền lợi
             được hưởng (nâng cao tính pháp lý).
           </li>

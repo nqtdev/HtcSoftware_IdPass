@@ -4,7 +4,7 @@ const FieldTransportLogistics = () => {
     <div className='flex flex-col lg:flex-row'>
       <div className='basis-1/2 flex justify-center items-center'>
         <ul>
-          <li>
+          <li className='font-mulish'>
             - Kiểm soát khách hàng gửi đơn tại bưu cục (tránh tình trạng lợi dụng đơn vị vận chuyển
             cho các mục đích xấu).
           </li>
