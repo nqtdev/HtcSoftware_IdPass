@@ -15,7 +15,12 @@ const FieldTelecom = () => {
         </ul>
       </div>
       <div className='basis-1/2'>
-        <img className='w-3/5 m-auto' src={img_fieldTelecom} alt='img_fieldTelecom' />
+        <img
+          className='w-3/5 m-auto'
+          src={img_fieldTelecom}
+          alt='img_fieldTelecom'
+          loading='lazy'
+        />
       </div>
     </div>
   )

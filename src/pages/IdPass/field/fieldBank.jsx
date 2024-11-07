@@ -17,7 +17,7 @@ const FieldBank = () => {
         </ul>
       </div>
       <div className='basis-1/2'>
-        <img className='w-3/5 m-auto' src={img_fieldBank} alt='img_fieldBank' />
+        <img className='w-3/5 m-auto' src={img_fieldBank} alt='img_fieldBank' loading='lazy' />
       </div>
     </div>
   )

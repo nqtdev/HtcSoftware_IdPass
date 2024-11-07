@@ -12,7 +12,12 @@ const FieldTraffic = () => {
         </ul>
       </div>
       <div className='basis-1/2'>
-        <img className='w-3/5 m-auto' src={img_fieldTraffic} alt='img_fieldTraffic' />
+        <img
+          className='w-3/5 m-auto'
+          src={img_fieldTraffic}
+          alt='img_fieldTraffic'
+          loading='lazy'
+        />
       </div>
     </div>
   )

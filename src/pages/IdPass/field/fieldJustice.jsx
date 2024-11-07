@@ -15,7 +15,12 @@ const FieldJustice = () => {
         </ul>
       </div>
       <div className='basis-1/2'>
-        <img className='w-3/5 m-auto' src={img_fieldJustice} alt='img_fieldJustice' />
+        <img
+          className='w-3/5 m-auto'
+          src={img_fieldJustice}
+          alt='img_fieldJustice'
+          loading='lazy'
+        />
       </div>
     </div>
   )

@@ -17,7 +17,7 @@ const FieldEdu = () => {
         </ul>
       </div>
       <div className='basis-1/2'>
-        <img className='w-3/5 m-auto' src={img_fieldEdu} alt='img_fieldEdu' />
+        <img className='w-3/5 m-auto' src={img_fieldEdu} alt='img_fieldEdu' loading='lazy' />
       </div>
     </div>
   )

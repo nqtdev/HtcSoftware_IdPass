@@ -11,7 +11,12 @@ const FieldInsurance = () => {
         </ul>
       </div>
       <div className='basis-1/2'>
-        <img className='w-3/5 m-auto' src={img_fieldInsurance} alt='img_fieldInsurance' />
+        <img
+          className='w-3/5 m-auto'
+          src={img_fieldInsurance}
+          alt='img_fieldInsurance'
+          loading='lazy'
+        />
       </div>
     </div>
   )
