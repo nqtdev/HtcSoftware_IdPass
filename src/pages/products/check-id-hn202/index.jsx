@@ -13,6 +13,7 @@ import SlideShowSwiper from 'components/SlideShowSwiper'
 import ButtonContact from 'layout/buttons/ButtonContact'
 import OtherProduct from 'components/otherProducts'
 import HanelView from 'components/softwareInterface/hanel'
+import DataGet from 'components/softwareInterface/DataGet'
 const CheckIdHn = () => {
   return (
     <div className='App'>
@@ -107,6 +108,9 @@ const CheckIdHn = () => {
       {/* Thông số kỹ thuật thiết bị  */}
       <section>
         <HanelView />
+      </section>
+      <section>
+        <DataGet />
       </section>
       <section>
         <div>

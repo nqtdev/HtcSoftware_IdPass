@@ -11,6 +11,7 @@ import TabShowDevice from './tabShowDevice'
 import ButtonContact from 'layout/buttons/ButtonContact'
 import OtherProduct from 'components/otherProducts'
 import MobileIDView from 'components/softwareInterface/mobileid'
+import DataGetSR from 'components/softwareInterface/DataGetSR'
 
 const CheckIdSr = () => {
   return (
@@ -98,6 +99,9 @@ const CheckIdSr = () => {
       </section>
       <section>
         <MobileIDView />
+      </section>
+      <section>
+        <DataGetSR />
       </section>
       {/* Thông số kỹ thuật thiết bị  */}
       <section>

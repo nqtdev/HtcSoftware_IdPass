@@ -13,6 +13,7 @@ import MRZ from 'assets/image_products/icon_function/MRZ.png'
 import imgProduct_ET from 'assets/image_products/check-id-et100/banner.png'
 import ButtonContact from 'layout/buttons/ButtonContact'
 import OtherProduct from 'components/otherProducts'
+import DataGet from 'components/softwareInterface/DataGet'
 
 const CheckIdEt = () => {
   return (
@@ -112,6 +113,9 @@ const CheckIdEt = () => {
             <ButtonContact />
           </div>
         </div>
+      </section>
+      <section>
+        <DataGet />
       </section>
       {/* Thông số kỹ thuật thiết bị  */}
       <section>

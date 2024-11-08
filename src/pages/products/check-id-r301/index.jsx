@@ -11,6 +11,7 @@ import SlideShowSwiper from 'components/SlideShowSwiper'
 import ButtonContact from 'layout/buttons/ButtonContact'
 import OtherProduct from 'components/otherProducts'
 import MobileIDView from 'components/softwareInterface/mobileid'
+import DataGet from 'components/softwareInterface/DataGet'
 const CheckIdRt = () => {
   return (
     <div className='App'>
@@ -95,6 +96,9 @@ const CheckIdRt = () => {
       </section>
       <section>
         <MobileIDView />
+      </section>
+      <section>
+        <DataGet />
       </section>
       {/* Thông số kỹ thuật thiết bị  */}
       <section>

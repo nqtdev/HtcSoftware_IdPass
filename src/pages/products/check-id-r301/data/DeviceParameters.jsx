@@ -56,7 +56,7 @@ const DeviceParameters = [
     itemA: 'Firmware',
     specificationA: 'OEM firmware',
     itemB: 'Bảo hành',
-    specificationB: 'liên hệ',
+    specificationB: 'Liên hệ',
   },
   {
     itemA: 'Số khe cắm thẻ',
