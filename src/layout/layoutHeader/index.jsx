@@ -126,7 +126,7 @@ const LayoutHeader = () => {
                 <Dropdown.Item onClick={closeMenu}>
                   {' '}
                   {/* Đóng menu khi nhấp vào */}
-                  <a href='https://idpass.vn/store/checkid_client_installer.zip'>
+                  <a href='https://htcsoftware.vn/store/CheckId-Client-Installer_INTERNAL_LIVE.rar'>
                     <Button gradientDuoTone='purpleToBlue' className='flex w-[12rem]'>
                       <div className='flex items-center'>
                         Download Plugin{' '}
