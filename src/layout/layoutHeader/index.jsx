@@ -123,9 +123,8 @@ const LayoutHeader = () => {
                 </Dropdown.Item>
                 <Dropdown.Divider />
                 {/* Download Plugin */}
-                <Dropdown.Item onClick={closeMenu}>
+                {/* <Dropdown.Item onClick={closeMenu}>
                   {' '}
-                  {/* Đóng menu khi nhấp vào */}
                   <a href='https://htcsoftware.vn/store/CheckId-Client-Installer_INTERNAL_LIVE.rar'>
                     <Button gradientDuoTone='purpleToBlue' className='flex w-[12rem]'>
                       <div className='flex items-center'>
@@ -150,7 +149,7 @@ const LayoutHeader = () => {
                       </div>
                     </Button>
                   </a>
-                </Dropdown.Item>
+                </Dropdown.Item> */}
               </Dropdown>
             </Button>
           </Navbar.Collapse>
