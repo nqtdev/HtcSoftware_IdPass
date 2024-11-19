@@ -1,6 +1,6 @@
-import LogoHtcSw from 'assets/logo/logo_sw.png'
-import imgBcta from 'assets/logo/bct_notion.png'
-import imgBctb from 'assets/logo/bct_sub.png'
+import LogoHtcSw from 'assets/logo/logo_sw.webp'
+import imgBcta from 'assets/logo/bct_notion.webp'
+import imgBctb from 'assets/logo/bct_sub.webp'
 const LayoutFooter = () => {
   return (
     <footer className='mt-16 flex justify-center bg-main-bgcolors'>
