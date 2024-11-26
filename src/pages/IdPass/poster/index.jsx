@@ -31,13 +31,11 @@ const PosterPage = () => {
             </span>
           </div>
           <div>
-            <span className='text-md ml-1 text-gray-400'>
-              Giải pháp Ứng dụng dịch vụ xác thực thông tin công dân trong chip của thẻ CCCD trong
-              việc xác minh thông tin nhân thân, đối sánh ảnh chân dung và xác minh thông tin/đánh
-              giá hồ sơ, người dùng/khách hàng ứng dụng cơ sở dữ liệu gốc quốc gia về dân cư, căn
-              cước công dân và các tính năng/dữ liệu trong chíp điện tử trên thẻ CCCD gắn chip để tự
-              động xác minh thông tin nhân thân (kiểm tra giấy tờ tùy thân), đối sánh ảnh chân dung
-              (đối chiếu sinh trắc học) và xác minh thông tin/đánh giá hồ sơ người dùng/khách hàng.
+            <span className='text-md ml-1 text-gray-600'>
+              Đây là giải pháp kiểm tra/xác thực thông tin công dân trong chip của thẻ CCCD được
+              tích hợp với dịch vụ xác thực của C06 (Bộ Công an). ID Pass sử dụng sinh trắc học
+              khuôn mặt thông qua: OCR, FacialMatching, Liveness để so khớp khuôn mặt chủ giấy tờ
+              Xác minh giấy tờ là chính chủ.
             </span>
           </div>
         </div>
