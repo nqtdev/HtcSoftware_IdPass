@@ -38,7 +38,7 @@ const CheckIdSr = () => {
         </div>
       </section>
       {/* Xem thêm hình ảnh sản phẩm  */}
-      <section>
+      <section className='lg:h-[41rem]'>
         <div>
           <h2 className='base_title'>Hình ảnh sản phẩm</h2>
         </div>

@@ -18,8 +18,8 @@ const PosterPage = () => {
     <div>
       <section className='flex max-w-full flex-col justify-between lg:flex-row'>
         <div className='container m-auto box-border px-2'>
-          <h1 className='m-2 text-center text-4xl font-bold italic text-main-colors md:text-[3.2rem] xl:text-6xl'>
-            RAR CHIP TOOTKIT
+          <h1 className='m-2 text-center text-7xl font-bold italic text-main-colors md:text-[3.2rem] xl:text-9xl'>
+            ID Pass
           </h1>
           <div className='text-center sm:m-2'>
             <span className='text-md text-main-colors xl:text-2xl'>
@@ -45,7 +45,7 @@ const PosterPage = () => {
       </section>
       <section className='m-auto lg:w-[85%] mt-20'>
         <div data-aos='zoom-in' data-aos-duration='1000' className='mt-10 '>
-          <h2 className='base_title'>Tính năng của Rar Chip Tootkit</h2>
+          <h2 className='base_title'>Tính năng của ID Pass</h2>
         </div>
         <div className='grid gap-2 md:grid-cols-2 mx-auto'>
           <div

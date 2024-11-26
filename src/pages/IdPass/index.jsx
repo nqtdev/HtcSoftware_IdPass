@@ -8,7 +8,7 @@ const IdPassPage = () => {
       <section>
         <PosterPage />
       </section>
-      <section>
+      <section className='h-[38rem]'>
         <div className='m-10'>
           <h2 className='base_title '>Giải pháp tự động hoá thủ tục kiểm tra thông tin</h2>
         </div>
