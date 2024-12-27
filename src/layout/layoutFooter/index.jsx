@@ -106,7 +106,7 @@ const LayoutFooter = () => {
                   </svg>
                 </div>
                 <span className='text-white'>
-                  Tầng 4 Monaco, Ngách 6 ngõ 118 Nguyễn Khánh Toàn, Phường Quan Hoa, Quận Cầu Giấy,
+                  Toà Monaco, Ngách 6 ngõ 118 Nguyễn Khánh Toàn, Phường Quan Hoa, Quận Cầu Giấy,
                   Thành phố Hà Nội.
                 </span>
               </div>
@@ -136,7 +136,7 @@ const LayoutFooter = () => {
                   </svg>
                 </div>
                 <span className='text-white'>
-                  Số 15, ngõ 29, phố Khương Hạ, Phường Khương Đình, Quận Thanh Xuân, Thành phố Hà
+                  Số 15, Ngõ 29 phố Khương Hạ, Phường Khương Đình, Quận Thanh Xuân, Thành phố Hà
                   Nội.
                 </span>
               </div>
