@@ -1,6 +1,4 @@
 import LogoHtcSw from 'assets/logo/logo_sw.webp'
-import imgBcta from 'assets/logo/bct_notion.webp'
-import imgBctb from 'assets/logo/bct_sub.webp'
 const LayoutFooter = () => {
   return (
     <footer className='mt-16 flex justify-center bg-main-bgcolors'>
@@ -64,14 +62,6 @@ const LayoutFooter = () => {
                   />
                 </svg>
                 <p className='ml-3 text-white'>Mã Số Thuế: 0103925078</p>
-              </div>
-              <div className='flex mt-2 w-3/4 items-center'>
-                <div className='w-full'>
-                  <img className='w-4/5' src={imgBcta} alt='' />
-                </div>
-                <div className='w-full'>
-                  <img className='w-4/5' src={imgBctb} alt='' />
-                </div>
               </div>
             </div>
           </section>
