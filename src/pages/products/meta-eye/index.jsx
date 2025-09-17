@@ -1,12 +1,10 @@
 import TableSpecification from 'components/TableSpecification'
 import SlideShowSwiper from 'components/SlideShowSwiper'
-
 import SlideProduct from './data/SlideProduct'
 import DeviceParameters from './data/DeviceParameters'
-
 import imgProduct_eYe from 'assets/image_products/meta-eye/main.webp'
-import ButtonContact from 'layout/buttons/ButtonContact'
 import OtherProduct from 'components/otherProducts'
+import ButtonContact from 'layout/buttons/ButtonContact'
 
 const MetaEye = () => {
   return (
@@ -44,7 +42,6 @@ const MetaEye = () => {
             <div className='mb-3 ml-2'>
               <i className='text-center text-3xl font-bold text-main-colors'>Meta eYe</i>
             </div>
-
             <p className='text-left font-roboto text-main-colors'>
               Công nghệ Meta Reality đột phá, bao gồm tính năng AR và camera màu Passthrough. <br />
               Thiết kế mỏng, thoải mái, mang lại sự thoải mái tuyệt đối trong thời gian sử dụng kéo
@@ -55,12 +52,7 @@ const MetaEye = () => {
           </div>
           <div className='mt-3'>
             <div className='mb-2'>
-              <u className='text-xl font-semibold text-main-colors'>Giá Tiền:</u>
-            </div>
-            <div className=''>
-              <div>
-                <span className='text-4xl font-bold text-blue-500'>25.000.000 VNĐ</span>
-              </div>
+              <u className='text-xl font-semibold text-main-colors mr-2'>Mua Sản Phẩm:</u>{' '}
               <ButtonContact />
             </div>
           </div>

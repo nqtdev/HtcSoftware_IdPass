@@ -4,7 +4,7 @@ import LayoutFooter from './layoutFooter'
 import ButtonCall from './buttons/ButtonCall'
 import ButtonMail from './buttons/ButtonMail'
 import ScrollToTop from './buttons/ScrollToTop'
-import OnTop from 'components/OnTop'
+import OnTop from './OnTop'
 
 const Layout = () => {
   return (
@@ -15,8 +15,8 @@ const Layout = () => {
       </header>
       <body>
         <Outlet />
-        <ButtonCall />
-        <ButtonMail />
+        <ButtonCall phoneNumber='0848565555' />
+        <ButtonMail emailAddress='kinhdoanh@htcsoftware.vn' />
         <ScrollToTop />
       </body>
       <footer>

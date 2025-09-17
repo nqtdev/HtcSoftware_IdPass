@@ -60,19 +60,19 @@ body {
 .button_scroll {
   position: fixed;
   bottom: 1rem;
-  right: 0.2rem;
+  right: 0.1rem;
   z-index: 10;
 }
 .button_call {
   position: fixed;
   bottom: 12rem;
-  right: 0.2rem;
+  right: 0.1rem;
   z-index: 10;
 }
 .button_mail {
   position: fixed;
   bottom: 5rem;
-  right: 0.2rem;
+  right: 0.1rem;
   z-index: 10;
 }
 

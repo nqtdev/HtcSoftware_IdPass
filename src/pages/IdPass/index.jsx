@@ -1,35 +1,42 @@
-import Field from './field'
-import PosterPage from './Poster'
-import Procedure from './procedure'
-import Certificate from './Certificate'
-import Feature from './Feature'
+import Field from './components/field'
+import PosterPage from './components/Poster'
+import Procedure from './components/procedure'
+import Certificate from './components/Certificate'
+import Feature from './components/Feature'
+import DescribeTitle from 'layout/describeTitle/describeTitle'
+import CallToAction from 'layout/callToAcction'
 const IdPassPage = () => {
   return (
-    <div className='container m-auto'>
+    <div className='m-auto'>
       <section>
         <PosterPage />
       </section>
       <section>
+        <div className='my-4 text-center'>
+          <DescribeTitle title='Tính năng nổi bật của ID Pass' />
+        </div>
         <Feature />
       </section>
-      <section className='h-[38rem]'>
-        <div className='m-10'>
-          <h2 className='base_title '>Giải pháp tự động hoá thủ tục kiểm tra thông tin</h2>
+      <section>
+        <div className='my-4 text-center'>
+          <DescribeTitle title='Giải pháp tự động hóa thủ tục kiểm tra thông tin' />
         </div>
         <Procedure />
       </section>
+
       <section>
-        <div className='m-10'>
-          <h2 className='base_title'>Giấy chứng nhận</h2>
+        <div className='my-4 text-center'>
+          <DescribeTitle title='Giấy chứng nhận' />
         </div>
         <Certificate />
       </section>
       <section>
-        <div className='m-10'>
-          <h2 className='base_title'>Ứng dụng giải pháp trong các lĩnh vực</h2>
+        <div className='my-4 text-center'>
+          <DescribeTitle title='Ứng dụng giải pháp trong các lĩnh vụ' />
         </div>
         <Field />
       </section>
+      <CallToAction />
     </div>
   )
 }
