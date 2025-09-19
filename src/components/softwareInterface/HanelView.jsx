@@ -1,5 +1,6 @@
 import hanel from 'assets/image_products/softwareInterface/hanel.png'
-import DescribeTitle from 'layout/describeTitle/describeTitle'
+import DescribeTitle from 'layout/DescribeTitle'
+
 const HanelView = () => {
   return (
     <div className='w-full'>

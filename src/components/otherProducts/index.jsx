@@ -4,8 +4,8 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/free-mode'
 
-import DescribeTitle from 'layout/describeTitle/describeTitle'
 import ShowProducts from './ShowProducts'
+import DescribeTitle from 'layout/DescribeTitle'
 
 const DEFAULT_BREAKPOINTS = {
   320: {slidesPerView: 1, spaceBetween: 16},

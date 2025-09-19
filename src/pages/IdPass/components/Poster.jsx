@@ -1,4 +1,4 @@
-import Banner from 'assets/page_idPass/banner.webp'
+import Banner from 'assets/page_idPass/banner2.webp'
 import 'aos/dist/aos.css'
 import useCheckMobile from 'hooks/useCheckMobile'
 const PosterPage = () => {
@@ -10,7 +10,7 @@ const PosterPage = () => {
         <div className='absolute top-1/4 left-10 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000'></div>
         <div className='absolute bottom-0 left-1/3 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob'></div>
       </div>
-      <div className='container mx-auto max-w-7xl relative z-10 px-4'>
+      <div className=' mx-auto max-w-7xl relative z-10 px-4'>
         <div className='flex flex-col lg:flex-row items-center justify-between gap-8'>
           <div
             className='w-full lg:w-1/2 text-center lg:text-left'
@@ -21,13 +21,20 @@ const PosterPage = () => {
               ID Pass
             </h1>
             <p className='text-xl text-center md:text-2xl text-gray-700 mb-6'>
-              Giải pháp định danh điện tử cho doanh nghiệp
+              Thiết bị đầu đọc thẻ được trung tâm RAR khuyên dùng
             </p>
             <p className='text-gray-600 mb-8 leading-relaxed'>
-              Đây là giải pháp kiểm tra/xác thực thông tin công dân trong chip của thẻ CCCD được
-              tích hợp với dịch vụ xác thực của C06 (Bộ Công an). ID Pass sử dụng sinh trắc học
-              khuôn mặt thông qua: OCR, FacialMatching, Liveness để so khớp khuôn mặt chủ giấy tờ
-              Xác minh giấy tờ là chính chủ.
+              ID Pass là dịch vụ cung cấp thiết bị đọc Căn Cước chính xác 100% phục vụ các nhu cầu
+              trong: Tài chính, Giáo dục, Y tế,.. <br />
+            </p>
+            <p className='text-gray-600 mb-8 leading-relaxed'>
+              Các dòng thiết bị đáp ứng các nhu cầu : Tích hợp NFC đọc Chip, Scan ảnh 2 bề mặt thẻ,
+              Lấy vân tay, Chụp ảnh gương mặt,..
+            </p>
+            <p className='text-gray-600 mb-8 leading-relaxed'>
+              Thiết kế hiện đại( đặt tại quầy giao dịch, bàn lễ tân - CheckID-SR, CheckID-ET100),
+              Nhỏ gọn (USB cầm tay - hỗ trợ điện thoại không có sẵn NFC ), Tiện lợi ( CheckID-R301 -
+              Kích thước bằng 1/2 điện thoại di động, Hỗ trợ đọc NFC trên Laptop/PC)
             </p>
           </div>
           <div

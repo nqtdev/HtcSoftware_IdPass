@@ -1,10 +1,10 @@
 import Field from './components/field'
 import PosterPage from './components/Poster'
-import Procedure from './components/procedure'
 import Certificate from './components/Certificate'
 import Feature from './components/Feature'
-import DescribeTitle from 'layout/describeTitle/describeTitle'
-import CallToAction from 'layout/callToAcction'
+import Procedure from './components/Procedure'
+import DescribeTitle from 'layout/DescribeTitle'
+import CallToAction from 'layout/CallToAction'
 const IdPassPage = () => {
   return (
     <div className='m-auto'>

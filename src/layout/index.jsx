@@ -13,7 +13,7 @@ const Layout = () => {
       <header>
         <LayoutHeader />
       </header>
-      <body>
+      <body className='bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100'>
         <Outlet />
         <ButtonCall phoneNumber='0848565555' />
         <ButtonMail emailAddress='kinhdoanh@htcsoftware.vn' />

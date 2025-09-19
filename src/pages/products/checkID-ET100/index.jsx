@@ -7,8 +7,8 @@ import OtherProduct from 'components/otherProducts'
 import DataGet from 'components/softwareInterface/DataGet'
 import FeaturesSection from 'components/FeaturesSection'
 import Features from './data/Features'
-import DescribeTitle from 'layout/describeTitle/describeTitle'
-import CallToAction from 'layout/callToAcction'
+import DescribeTitle from 'layout/DescribeTitle'
+import CallToAction from 'layout/CallToAction'
 
 const CheckIdEt = () => {
   return (

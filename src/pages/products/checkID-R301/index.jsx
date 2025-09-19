@@ -8,7 +8,8 @@ import MobileIDView from 'components/softwareInterface/MobileIdView'
 import DataGet from 'components/softwareInterface/DataGet'
 import FeaturesSection from 'components/FeaturesSection'
 import Features from './data/Features'
-import DescribeTitle from 'layout/describeTitle/describeTitle'
+import DescribeTitle from 'layout/DescribeTitle'
+import CallToAction from 'layout/CallToAction'
 
 const CheckIdRt = () => {
   return (
@@ -148,6 +149,9 @@ const CheckIdRt = () => {
       {/* Xem thêm sản phẩm */}
       <section>
         <OtherProduct />
+      </section>
+      <section>
+        <CallToAction />
       </section>
     </div>
   )

@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-import DescribeTitle from 'layout/describeTitle/describeTitle'
+
+import DescribeTitle from 'layout/DescribeTitle'
 import {useState} from 'react'
 
 const FeaturesSection = ({dataFeatures}) => {

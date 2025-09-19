@@ -1,4 +1,4 @@
-import DescribeTitle from 'layout/describeTitle/describeTitle'
+import DescribeTitle from 'layout/DescribeTitle'
 
 /* eslint-disable react/prop-types */
 const dataCard = [
@@ -52,7 +52,7 @@ const DataGet = () => {
   )
 
   return (
-    <div className='py-12 px-4 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 min-h-screen overflow-hidden'>
+    <div className='py-12 px-4  min-h-screen overflow-hidden'>
       <div className='max-w-7xl mx-auto'>
         {/* Header */}
         <div className='text-center mb-12'>
