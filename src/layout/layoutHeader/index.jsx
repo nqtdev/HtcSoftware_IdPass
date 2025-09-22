@@ -92,7 +92,7 @@ const HeaderWeb = () => {
                         className={`transition-colors duration-300 ${navLinkStyle}`}
                       />
                       <span
-                        className={`text-sm font-medium transition-colors duration-300 ${navLinkStyle}`}
+                        className={`text-sm  font-roboto transition-colors duration-300 ${navLinkStyle}`}
                       >
                         {item.name}
                       </span>
@@ -115,7 +115,7 @@ const HeaderWeb = () => {
                     className={`text-gray-600 group-hover:text-purple-600 transition-colors duration-300 ${location.pathname.startsWith('/products') ? 'text-purple-600' : ''}`}
                   />
                   <span
-                    className={`text-sm font-medium transition-colors duration-300 ${location.pathname.startsWith('/products') ? 'text-purple-700' : 'text-gray-700 group-hover:text-purple-700'}`}
+                    className={`text-sm font-roboto transition-colors duration-300 ${location.pathname.startsWith('/products') ? 'text-purple-700' : 'text-gray-700 group-hover:text-purple-700'}`}
                   >
                     Thiết Bị
                   </span>
@@ -145,7 +145,7 @@ const HeaderWeb = () => {
                           }
                         >
                           <div
-                            className={`font-medium transition-colors duration-300 ${
+                            className={`font-roboto transition-colors duration-300 ${
                               location.pathname === item.href
                                 ? 'text-purple-700'
                                 : 'text-gray-900 group-hover:text-purple-700'
