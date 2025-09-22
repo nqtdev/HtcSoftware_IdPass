@@ -5,11 +5,15 @@ import Feature from './components/Feature'
 import Procedure from './components/Procedure'
 import DescribeTitle from 'layout/DescribeTitle'
 import CallToAction from 'layout/CallToAction'
+import OtherProduct from 'components/otherProducts'
 const IdPassPage = () => {
   return (
     <div className='m-auto'>
       <section>
         <PosterPage />
+      </section>
+      <section>
+        <OtherProduct />
       </section>
       <section>
         <div className='my-4 text-center'>

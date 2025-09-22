@@ -30,6 +30,7 @@ export default {
         'bg-img':
           "url('/src/assets/page_RarEkycPlatform/section_content_b/background_section.png')",
         'bg-img-product': " url('/src/assets/image_products/background_products.png')",
+        'bg-banner': "url('/src/assets/page_idPass/bannerIDpass.webp')",
       },
     },
   },

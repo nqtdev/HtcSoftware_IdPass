@@ -22,7 +22,6 @@ function SlideSwiper({
 }) {
   return (
     <section className='relative overflow-x-hidden py-16 px-4' aria-label={title}>
-      {/* Decor blobs: nằm TRƯỚC để không đè nội dung, và được clip bởi overflow-hidden của section */}
       <div className='pointer-events-none absolute inset-0 overflow-hidden -z-10'>
         <div className='absolute left-0 -bottom-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply blur-xl opacity-30 animate-blob' />
         <div className='absolute right-10 -bottom-20 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply blur-xl opacity-30 animate-blob animation-delay-2000' />
@@ -56,10 +55,10 @@ function SlideSwiper({
 
                     {/* Content */}
                     <div className='flex flex-1 flex-col p-6'>
-                      <h4 className='text-xl font-bold text-gray-800 line-clamp-1 transition-colors duration-200 group-hover:text-blue-600'>
+                      <h4 className='text-xl font-semibold font-roboto text-gray-800 line-clamp-1 transition-colors duration-200 group-hover:text-blue-600'>
                         {item.slideName}
                       </h4>
-                      <p className='mt-3 flex-grow text-gray-600 line-clamp-2'>
+                      <p className='mt-3 font-sm font-roboto flex-grow text-gray-600 line-clamp-2'>
                         {item.slideDescription}
                       </p>
                     </div>
