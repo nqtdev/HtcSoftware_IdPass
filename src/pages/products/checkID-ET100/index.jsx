@@ -7,12 +7,14 @@ import OtherProduct from 'components/otherProducts'
 import DataGet from 'components/softwareInterface/DataGet'
 import FeaturesSection from 'components/FeaturesSection'
 import Features from './data/Features'
+
+import ProductDescription from 'components/ProductDescription'
+import DataProductDescription from './data/ProductDescription'
 import DescribeTitle from 'layout/DescribeTitle'
 import CallToAction from 'layout/CallToAction'
-
 const CheckIdEt = () => {
   return (
-    <div className='bg-gradient-to-br from-slate-50 to-blue-50 '>
+    <div className='bg-gradient-to-br from-slate-50 to-blue-50 overflow-hidden'>
       {/* Banner sản phẩm  */}
       <section>
         <div className='relative min-h-[80vh] w-full'>
@@ -70,7 +72,6 @@ const CheckIdEt = () => {
           </div>
         </div>
       </section>
-
       {/* Hình ảnh sản phẩm  */}
       <section>
         <div className='my-4 text-center'>
@@ -79,121 +80,21 @@ const CheckIdEt = () => {
         <div className='m-auto w-5/6'>
           <SlideShowSwiper slidesShow={SlideProduct} />
         </div>
+        <ProductDescription data={DataProductDescription} />
       </section>
-
-      {/* Chi tiết sản phẩm  */}
-      <section>
-        <div className='max-w-4xl mx-auto  overflow-hidden'>
-          <div className='p-8 md:p-12'>
-            {/* Danh sách tính năng */}
-            <div className='space-y-4'>
-              <div className='flex items-start'>
-                <div className='flex-shrink-0 mt-1'>
-                  <svg
-                    className='w-5 h-5 text-green-500'
-                    fill='none'
-                    stroke='currentColor'
-                    viewBox='0 0 24 24'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth={2}
-                      d='M5 13l4 4L19 7'
-                    />
-                  </svg>
-                </div>
-                <p className='ml-3 text-gray-700 font-mulish text-lg'>
-                  Đáp ứng nhu cầu bảo mật cao mà không làm giảm sự tiện lợi
-                </p>
-              </div>
-
-              <div className='flex items-start'>
-                <div className='flex-shrink-0 mt-1'>
-                  <svg
-                    className='w-5 h-5 text-green-500'
-                    fill='none'
-                    stroke='currentColor'
-                    viewBox='0 0 24 24'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth={2}
-                      d='M5 13l4 4L19 7'
-                    />
-                  </svg>
-                </div>
-                <p className='ml-3 text-gray-700 font-mulish text-lg'>
-                  Có cổng USB loại A female, cho phép kết nối với máy tính
-                </p>
-              </div>
-
-              <div className='flex items-start'>
-                <div className='flex-shrink-0 mt-1'>
-                  <svg
-                    className='w-5 h-5 text-green-500'
-                    fill='none'
-                    stroke='currentColor'
-                    viewBox='0 0 24 24'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth={2}
-                      d='M5 13l4 4L19 7'
-                    />
-                  </svg>
-                </div>
-                <p className='ml-3 text-gray-700 font-mulish text-lg'>
-                  Hỗ trợ nhiều loại cảm biến sinh trắc học như SecuGen, SupreMa, ZKTeco và Morpho
-                </p>
-              </div>
-
-              <div className='flex items-start'>
-                <div className='flex-shrink-0 mt-1'>
-                  <svg
-                    className='w-5 h-5 text-green-500'
-                    fill='none'
-                    stroke='currentColor'
-                    viewBox='0 0 24 24'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth={2}
-                      d='M5 13l4 4L19 7'
-                    />
-                  </svg>
-                </div>
-                <p className='ml-3 text-gray-700 font-mulish text-lg'>
-                  Việc chọn cảm biến sinh trắc học nên dựa trên yêu cầu của khách hàng.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section>
         <FeaturesSection dataFeatures={Features} />
       </section>
       <section>
         <DataGet />
       </section>
-
       {/* Thông số kỹ thuật thiết bị  */}
       <section>
         <TableSpecification data={DeviceParameters} />
       </section>
-
       {/* Xem thêm sản phẩm */}
       <section>
-        <OtherProduct />
+        <OtherProduct title='Xem thêm sản phẩm khác' />
       </section>
       <section>
         <CallToAction />

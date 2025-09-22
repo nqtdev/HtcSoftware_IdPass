@@ -7,6 +7,8 @@ import MobileIDView from 'components/softwareInterface/MobileIdView'
 import DataGetSR from 'components/softwareInterface/DataGetSR'
 import FeaturesSection from 'components/FeaturesSection'
 import Features from './data/Features'
+import ProductDescription from 'components/ProductDescription'
+import DataProductDescription from './data/ProductDescription'
 import DescribeTitle from 'layout/DescribeTitle'
 import CallToAction from 'layout/CallToAction'
 
@@ -78,124 +80,7 @@ const CheckIdSr = () => {
         <div className='m-auto w-3/4'>
           <TabShowDevice />
         </div>
-      </section>
-      <section>
-        <div className='max-w-4xl mx-auto  overflow-hidden'>
-          <div className='p-8 md:p-12'>
-            {/* Danh sách tính năng */}
-            <div className='space-y-4'>
-              <div className='flex items-start'>
-                <div className='flex-shrink-0 mt-1'>
-                  <svg
-                    className='w-5 h-5 text-green-500'
-                    fill='none'
-                    stroke='currentColor'
-                    viewBox='0 0 24 24'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth={2}
-                      d='M5 13l4 4L19 7'
-                    />
-                  </svg>
-                </div>
-                <p className='ml-3 text-gray-700 font-mulish text-lg'>
-                  Hưởng lợi từ việc nhập dữ liệu và xác minh chính xác
-                </p>
-              </div>
-
-              <div className='flex items-start'>
-                <div className='flex-shrink-0 mt-1'>
-                  <svg
-                    className='w-5 h-5 text-green-500'
-                    fill='none'
-                    stroke='currentColor'
-                    viewBox='0 0 24 24'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth={2}
-                      d='M5 13l4 4L19 7'
-                    />
-                  </svg>
-                </div>
-                <p className='ml-3 text-gray-700 font-mulish text-lg'>
-                  Thiết kế OEM cho cổng ABC và các Kiosk tự phục vụ
-                </p>
-              </div>
-
-              <div className='flex items-start'>
-                <div className='flex-shrink-0 mt-1'>
-                  <svg
-                    className='w-5 h-5 text-green-500'
-                    fill='none'
-                    stroke='currentColor'
-                    viewBox='0 0 24 24'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth={2}
-                      d='M5 13l4 4L19 7'
-                    />
-                  </svg>
-                </div>
-                <p className='ml-3 text-gray-700 font-mulish text-lg'>
-                  Thiết kế trực quan dễ sử dụng
-                </p>
-              </div>
-
-              <div className='flex items-start'>
-                <div className='flex-shrink-0 mt-1'>
-                  <svg
-                    className='w-5 h-5 text-green-500'
-                    fill='none'
-                    stroke='currentColor'
-                    viewBox='0 0 24 24'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth={2}
-                      d='M5 13l4 4L19 7'
-                    />
-                  </svg>
-                </div>
-                <p className='ml-3 text-gray-700 font-mulish text-lg'>
-                  Kiểm tra tự động hành khách, vận hành 24/7
-                </p>
-              </div>
-
-              <div className='flex items-start'>
-                <div className='flex-shrink-0 mt-1'>
-                  <svg
-                    className='w-5 h-5 text-green-500'
-                    fill='none'
-                    stroke='currentColor'
-                    viewBox='0 0 24 24'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth={2}
-                      d='M5 13l4 4L19 7'
-                    />
-                  </svg>
-                </div>
-                <p className='ml-3 text-gray-700 font-mulish text-lg'>
-                  Đọc và xác minh mọi loại thẻ bao gồm cả tài liệu điện tử du lịch
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ProductDescription data={DataProductDescription} />
       </section>
       <section>
         <FeaturesSection dataFeatures={Features} />
@@ -212,7 +97,7 @@ const CheckIdSr = () => {
       </section>
       {/* Xem thêm sản phẩm */}
       <section>
-        <OtherProduct />
+        <OtherProduct title='Xem thêm sản phẩm khác' />
       </section>
       <section>
         <CallToAction />

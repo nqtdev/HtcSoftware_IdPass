@@ -1,10 +1,10 @@
 import {useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import useCheckMobile from 'hooks/useCheckMobile'
+// import useCheckMobile from 'hooks/useCheckMobile'
 
 const PosterPage = () => {
-  const isMobile = useCheckMobile()
+  // const isMobile = useCheckMobile()
 
   useEffect(() => {
     AOS.init({
@@ -20,12 +20,8 @@ const PosterPage = () => {
       <div className='absolute inset-0 bg-bg-banner bg-cover bg-right xl:bg-center bg-no-repeat bg-fixed z-0' />
       <div className='container mx-auto px-4 relative z-10'>
         <div className='flex flex-col lg:flex-row items-center justify-between gap-8'>
-          <div
-            className='w-full lg:w-3/5 text-center lg:text-left'
-            data-aos={isMobile ? 'fade-up' : 'fade-right'}
-            data-aos-delay='200'
-          >
-            <div className='text-center'>
+          <div className='w-full lg:w-3/5 text-center lg:text-left'>
+            <div className='text-center' data-aos='zoom-in' data-aos-delay='200'>
               <h1 className='text-5xl lg:text-6xl xl:text-7xl font-bold font-roboto mb-6 leading-tight text-blue-600'>
                 ID Pass
               </h1>
@@ -34,7 +30,11 @@ const PosterPage = () => {
               </p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mt-12'>
-              <div className='bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1'>
+              <div
+                data-aos='fade-up'
+                data-aos-delay='200'
+                className='bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1'
+              >
                 <div className='w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 mx-auto'>
                   <svg
                     className='w-6 h-6 text-blue-600'
@@ -57,7 +57,11 @@ const PosterPage = () => {
                 </span>
               </div>
 
-              <div className='bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1'>
+              <div
+                data-aos='fade-up'
+                data-aos-delay='500'
+                className='bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1'
+              >
                 <div className='w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 mx-auto'>
                   <svg
                     className='w-6 h-6 text-purple-600'
@@ -79,7 +83,11 @@ const PosterPage = () => {
                 </p>
               </div>
 
-              <div className='bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1'>
+              <div
+                data-aos='fade-up'
+                data-aos-delay='800'
+                className='bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1'
+              >
                 <div className='w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-4 mx-auto'>
                   <svg
                     className='w-6 h-6 text-cyan-600'

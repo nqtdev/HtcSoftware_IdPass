@@ -16,7 +16,7 @@ const DEFAULT_BREAKPOINTS = {
 
 function SlideSwiper({
   slides = ShowProducts,
-  title = 'Xem thêm các sản phẩm khác',
+  title = {title},
   description = '',
   swiperConfig = {freeMode: true},
 }) {

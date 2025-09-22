@@ -13,7 +13,7 @@ const IdPassPage = () => {
         <PosterPage />
       </section>
       <section>
-        <OtherProduct />
+        <OtherProduct title={'Các sản phẩm đọc thẻ của chúng tôi'} />
       </section>
       <section>
         <div className='my-4 text-center'>
