@@ -8,13 +8,14 @@ import HanelView from 'components/softwareInterface/HanelView'
 import DataGet from 'components/softwareInterface/DataGet'
 import FeaturesSection from 'components/FeaturesSection'
 import Features from './data/Features'
+
 import ProductDescription from 'components/ProductDescription'
 import DataProductDescription from './data/ProductDescription'
 import DescribeTitle from 'layout/DescribeTitle'
 import CallToAction from 'layout/CallToAction'
 const CheckIdHn = () => {
   return (
-    <div className='bg-gradient-to-br from-slate-50 to-blue-50 overflow-hidden'>
+    <div className='overflow-hidden'>
       {/* Banner sản phẩm  */}
       <section>
         <div className='relative min-h-[80vh] w-full overflow-hidden'>
@@ -72,38 +73,40 @@ const CheckIdHn = () => {
           </div>
         </div>
       </section>
-      <section>
-        <div className='my-4 text-center'>
-          <DescribeTitle title='Hình ảnh sản phẩm' />
-        </div>
-        <div className='m-auto w-5/6'>
-          <SlideShowSwiper slidesShow={SlideProduct} />
-        </div>
-        <ProductDescription data={DataProductDescription} />
-      </section>
-      <section>
-        <FeaturesSection dataFeatures={Features} />
-      </section>
-      <section>
-        <HanelView />
-      </section>
-      <section>
-        <DataGet />
-      </section>
-      <section>
-        <div>
-          <h2 className='base_title'>Thông số kỹ thuật thiết bị Đọc</h2>
-        </div>
-        <TableSpecification data={DeviceParameters} />
-        <div>
-          <h2 className='base_title'>Thông số kỹ thuật thiết bị Camera</h2>
-        </div>
-        <TableSpecification data={DeviceParametersCamera} />
-      </section>
-      {/* Xem thêm sản phẩm */}
-      <section>
-        <OtherProduct title='Xem thêm sản phẩm khác' />
-      </section>
+      <div className='max-w-7xl mx-auto'>
+        <section>
+          <div className='my-4 text-center'>
+            <DescribeTitle title='Hình ảnh sản phẩm' />
+          </div>
+          <div className='m-auto w-5/6'>
+            <SlideShowSwiper slidesShow={SlideProduct} />
+          </div>
+          <ProductDescription data={DataProductDescription} />
+        </section>
+        <section>
+          <FeaturesSection dataFeatures={Features} />
+        </section>
+        <section>
+          <HanelView />
+        </section>
+        <section>
+          <DataGet />
+        </section>
+        <section>
+          <div>
+            <h2 className='base_title'>Thông số kỹ thuật thiết bị Đọc</h2>
+          </div>
+          <TableSpecification data={DeviceParameters} />
+          <div>
+            <h2 className='base_title'>Thông số kỹ thuật thiết bị Camera</h2>
+          </div>
+          <TableSpecification data={DeviceParametersCamera} />
+        </section>
+        <section>
+          <OtherProduct title='Xem thêm sản phẩm khác' />
+        </section>
+      </div>
+
       <section>
         <CallToAction />
       </section>

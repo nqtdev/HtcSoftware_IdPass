@@ -8,13 +8,13 @@ const dataCard = [
   '4- Giới Tính',
   '5- Quốc Tịch',
   '6- Nguyên Quán',
-  '7- Ngày Cấp',
-  '8- Ngày Hết Hạn',
-  '9- Số Căn Cước Cũ',
-  '10- Dân Tộc',
-  '11- Tôn Giáo',
-  '12- Nhận Dạng Cá Nhân',
-  '13- Thường Trú',
+  '7- Ngày Hết Hạn',
+  '8- Số Căn Cước Cũ',
+  '9- Thường Trú',
+  '10- Ngày Cấp',
+  '11- Dân Tộc',
+  '12- Tôn Giáo',
+  '13- Nhận Dạng Cá Nhân',
   '14- Họ Tên Cha, Mẹ',
   '15- Họ Tên Vợ, Chồng',
 ]
@@ -52,7 +52,7 @@ const DataGet = () => {
   )
 
   return (
-    <div className='py-12 px-4  min-h-screen overflow-hidden'>
+    <div className='py-12 px-4 min-h-screen overflow-hidden'>
       <div className='max-w-7xl mx-auto'>
         {/* Header */}
         <div className='text-center mb-12'>
@@ -63,7 +63,17 @@ const DataGet = () => {
         <div className='grid lg:grid-cols-2 gap-8'>
           {/* Left Section - 15 trường thông tin */}
           <div className='space-y-6'>
-            <Section title='15 trường thông tin cơ bản' data={[]} icon='📋' />
+            <Section
+              title={
+                <span>
+                  Các trường thông tin dịnh danh trong Chip <span className='text-red-600'>*</span>{' '}
+                  <br />
+                  <i className='text-[.6rem]'> Dữ liệu có thể ít hơn nếu là thẻ Căn Cước</i>
+                </span>
+              }
+              data={[]}
+              icon='📋'
+            />
             <div className='bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300'>
               <div className='grid md:grid-cols-2 gap-0'>
                 {/* Cột đầu tiên */}

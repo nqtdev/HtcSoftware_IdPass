@@ -1,7 +1,6 @@
 // @ Thông tin nghị quyết 57
 import anh1 from 'assets/nq57/anhhiephoi2.webp'
 import anh3 from 'assets/nq57/anhhiephoi3.webp'
-import ListNews from './news/listNews'
 
 const Introduction = () => {
   return (
@@ -9,11 +8,11 @@ const Introduction = () => {
       {/* <div className='w-full h-56 flex justify-center items-center bg-gradient-to-r from-purple-600 to-blue-300'>
         <h2 className='text-white text-center text-5xl font-roboto'>HTC Tin Tức</h2>
       </div> */}
-      <div className='xl:grid xl:grid-cols-10 xxl:px-64 xl:px-32 px-5 '>
-        <div className='col-span-7 p-2 xl:p-10'>
-          <h2 className='text-3xl font-roboto'>
+      <div className='max-w-5xl mx-auto px-5 '>
+        <div className=' p-2 xl:p-10'>
+          <h1 className='text-4xl font-bold text-center font-lora'>
             Bộ trưởng Lương Tam Quang giữ chức Chủ tịch Hiệp hội Dữ liệu Quốc gia
-          </h2>
+          </h1>
           <h3 className='my-2 font-roboto ' style={{textIndent: '.5rem'}}>
             22/03/2025 - Chính thức ra mắt Hiệp hội Dữ liệu Quốc gia (NDA). Bộ trưởng Bộ Công an
             Lương Tam Quang được tín nhiệm bầu làm Chủ tịch NDA.
@@ -110,9 +109,6 @@ const Introduction = () => {
               Nguồn "Trung Tâm Dịch Vụ Chuyển Đổi Số - Chi Nhánh Tổng Công Ty Gtel (Gtel CDS)"
             </i>
           </div>
-        </div>
-        <div className='col-span-3 w-full'>
-          <ListNews />
         </div>
       </div>
     </>

@@ -8,6 +8,7 @@ import MobileIDView from 'components/softwareInterface/MobileIdView'
 import DataGet from 'components/softwareInterface/DataGet'
 import FeaturesSection from 'components/FeaturesSection'
 import Features from './data/Features'
+
 import ProductDescription from 'components/ProductDescription'
 import DataProductDescription from './data/ProductDescription'
 import DescribeTitle from 'layout/DescribeTitle'
@@ -15,7 +16,7 @@ import CallToAction from 'layout/CallToAction'
 
 const CheckIdRt = () => {
   return (
-    <div className='bg-gradient-to-br from-slate-50 to-blue-50'>
+    <div className='overflow-hidden'>
       {/* Banner sản phẩm  */}
       <section>
         <div className='relative min-h-[80vh] w-full overflow-hidden'>
@@ -74,33 +75,35 @@ const CheckIdRt = () => {
           </div>
         </div>
       </section>
-      {/* Xem thêm hình ảnh sản phẩm  */}
-      <section>
-        <div className='my-4 text-center'>
-          <DescribeTitle title='Hình ảnh sản phẩm' />
-        </div>
-        <div className='m-auto w-3/4'>
-          <SlideShowSwiper slidesShow={SlideProduct} />
-        </div>
-        <ProductDescription data={DataProductDescription} />
-      </section>
-      <section>
-        <FeaturesSection dataFeatures={Features} />
-      </section>
-      <section>
-        <MobileIDView />
-      </section>
-      <section>
-        <DataGet />
-      </section>
-      {/* Thông số kỹ thuật thiết bị  */}
-      <section>
-        <TableSpecification data={DeviceParameters} />
-      </section>
-      {/* Xem thêm sản phẩm */}
-      <section>
-        <OtherProduct title='Xem thêm sản phẩm khác' />
-      </section>
+      <div className='max-w-7xl mx-auto'>
+        {/* Xem thêm hình ảnh sản phẩm  */}
+        <section>
+          <div className='my-4 text-center'>
+            <DescribeTitle title='Hình ảnh sản phẩm' />
+          </div>
+          <div className='m-auto w-3/4'>
+            <SlideShowSwiper slidesShow={SlideProduct} />
+          </div>
+          <ProductDescription data={DataProductDescription} />
+        </section>
+        <section>
+          <FeaturesSection dataFeatures={Features} />
+        </section>
+        <section>
+          <MobileIDView />
+        </section>
+        <section>
+          <DataGet />
+        </section>
+        {/* Thông số kỹ thuật thiết bị  */}
+        <section>
+          <TableSpecification data={DeviceParameters} />
+        </section>
+        {/* Xem thêm sản phẩm */}
+        <section>
+          <OtherProduct title='Xem thêm sản phẩm khác' />
+        </section>
+      </div>
       <section>
         <CallToAction />
       </section>

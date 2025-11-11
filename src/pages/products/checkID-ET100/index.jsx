@@ -14,7 +14,7 @@ import DescribeTitle from 'layout/DescribeTitle'
 import CallToAction from 'layout/CallToAction'
 const CheckIdEt = () => {
   return (
-    <div className='bg-gradient-to-br from-slate-50 to-blue-50 overflow-hidden'>
+    <div className='overflow-hidden'>
       {/* Banner sản phẩm  */}
       <section>
         <div className='relative min-h-[80vh] w-full'>
@@ -72,30 +72,32 @@ const CheckIdEt = () => {
           </div>
         </div>
       </section>
-      {/* Hình ảnh sản phẩm  */}
-      <section>
-        <div className='my-4 text-center'>
-          <DescribeTitle title='Hình ảnh sản phẩm' />
-        </div>
-        <div className='m-auto w-5/6'>
-          <SlideShowSwiper slidesShow={SlideProduct} />
-        </div>
-        <ProductDescription data={DataProductDescription} />
-      </section>
-      <section>
-        <FeaturesSection dataFeatures={Features} />
-      </section>
-      <section>
-        <DataGet />
-      </section>
-      {/* Thông số kỹ thuật thiết bị  */}
-      <section>
-        <TableSpecification data={DeviceParameters} />
-      </section>
-      {/* Xem thêm sản phẩm */}
-      <section>
-        <OtherProduct title='Xem thêm sản phẩm khác' />
-      </section>
+      <div className='max-w-7xl mx-auto'>
+        {/* Hình ảnh sản phẩm  */}
+        <section>
+          <div className='my-4 text-center'>
+            <DescribeTitle title='Hình ảnh sản phẩm' />
+          </div>
+          <div className='m-auto w-5/6'>
+            <SlideShowSwiper slidesShow={SlideProduct} />
+          </div>
+          <ProductDescription data={DataProductDescription} />
+        </section>
+        <section>
+          <FeaturesSection dataFeatures={Features} />
+        </section>
+        <section>
+          <DataGet />
+        </section>
+        {/* Thông số kỹ thuật thiết bị  */}
+        <section>
+          <TableSpecification data={DeviceParameters} />
+        </section>
+        {/* Xem thêm sản phẩm */}
+        <section>
+          <OtherProduct title='Xem thêm sản phẩm khác' />
+        </section>
+      </div>
       <section>
         <CallToAction />
       </section>

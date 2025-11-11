@@ -1,16 +1,10 @@
-// @ Thêm sản phẩm mới ở đây
 import product_sr from 'assets/image_products/link_product/checkID-SR.webp'
-// import product_metaEye from 'assets/image_products/link_product/meta-eye.webp'
 import product_rt from 'assets/image_products/link_product/checkID-R301.webp'
 import product_et from 'assets/image_products/link_product/checkID-ET100.webp'
 import product_hn212 from 'assets/image_products/link_product/checkID-HN212.webp'
+
+/** @type {SlideItem[]} */
 const ShowProducts = [
-  // {
-  //   slideContent: product_metaEye,
-  //   slideName: 'Meta eYe',
-  //   slideDescription: 'Thiết bị thực tế ảo',
-  //   linkProduct: '/products/meta-eye'
-  // },
   {
     slideContent: product_sr,
     slideName: 'CheckID-SR',
@@ -36,4 +30,5 @@ const ShowProducts = [
     linkProduct: '/products/checkID-HN212',
   },
 ]
+
 export default ShowProducts

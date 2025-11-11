@@ -1,27 +1,39 @@
+import {Image} from 'antd'
 import Gcn from 'assets/page_RarEkycPlatform/certification/giay_chung_nhan.webp'
 import GcnZ from 'assets/page_RarEkycPlatform/certification/giay_chung_nhan_zoom.webp'
 import Dkth from 'assets/page_RarEkycPlatform/certification/dang_ky_thuong_hieu.webp'
 import DkthZ from 'assets/page_RarEkycPlatform/certification/dang_ky_thuong_hieu_zoom.webp'
-import ModalImage from 'react-modal-image'
+
 const Certificate = () => {
-  const CertificateImg = [
-    {small: Gcn, large: GcnZ, alt: 'ảnh giấy chứng nhận'},
-    {small: Dkth, large: DkthZ, alt: 'ảnh đăng ký quyền tác giả'},
+  const certificateImages = [
+    {
+      src: Gcn,
+      previewSrc: GcnZ,
+      alt: 'Giấy chứng nhận',
+    },
+    {
+      src: Dkth,
+      previewSrc: DkthZ,
+      alt: 'Đăng ký quyền tác giả',
+    },
   ]
 
   return (
-    <section className='m-auto md:w-3/4'>
-      <div className='mb-5 flex flex-col sm:flex-row'>
-        {CertificateImg.map((image, index) => (
-          <div key={index} className='m-auto max-w-xs overflow-hidden pt-3'>
-            <ModalImage
-              loading='lazy'
-              hideDownload={true}
-              hideZoom={true}
-              className='thumbnail h-auto w-full cursor-pointer'
-              small={image.small}
-              large={image.large}
+    <section className='mx-auto max-w-4xl px-4 py-8'>
+      <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 lg:gap-8'>
+        {certificateImages.map((image, index) => (
+          <div
+            key={index}
+            className='group m-auto relative overflow-hidden  transition-all duration-300 hover:shadow-xl'
+          >
+            <Image
+              src={image.src}
               alt={image.alt}
+              className='h-auto w-full transform cursor-pointer object-cover transition-transform duration-300 group-hover:scale-105'
+              preview={{
+                src: image.previewSrc,
+              }}
+              loading='lazy'
             />
           </div>
         ))}

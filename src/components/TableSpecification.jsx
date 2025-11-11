@@ -22,7 +22,7 @@ const TableSpecification = ({data}) => {
           </div>
         </div>
         {/* Desktop Table (hidden on mobile) */}
-        <div className='hidden md:block bg-white rounded-xl md:rounded-2xl border border-gray-100 overflow-hidden backdrop-blur-sm'>
+        <div className='hidden md:block rounded-xl md:rounded-2xl border border-gray-100 overflow-hidden backdrop-blur-sm'>
           <div className='overflow-x-auto'>
             <table className='min-w-full'>
               <thead>

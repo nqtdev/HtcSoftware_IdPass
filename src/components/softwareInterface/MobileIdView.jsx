@@ -1,5 +1,6 @@
 import checkid from 'assets/image_products/softwareInterface/checkid.png'
 import DescribeTitle from 'layout/DescribeTitle'
+
 const MobileIDView = () => {
   return (
     <>

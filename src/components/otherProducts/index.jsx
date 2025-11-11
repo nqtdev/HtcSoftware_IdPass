@@ -14,14 +14,17 @@ const DEFAULT_BREAKPOINTS = {
   1280: {slidesPerView: 4, spaceBetween: 28},
 }
 
+// const isExternal = (url = '') => /^https?:\/\//i.test(url)
+
 function SlideSwiper({
   slides = ShowProducts,
-  title = {title},
+  title = '',
   description = '',
   swiperConfig = {freeMode: true},
 }) {
   return (
-    <section className='relative overflow-x-hidden py-16 px-4' aria-label={title}>
+    <section className='relative overflow-x-hidden py-16 px-4 overflow-hidden'>
+      {/* Decor blobs */}
       <div className='pointer-events-none absolute inset-0 overflow-hidden -z-10'>
         <div className='absolute left-0 -bottom-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply blur-xl opacity-30 animate-blob' />
         <div className='absolute right-10 -bottom-20 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply blur-xl opacity-30 animate-blob animation-delay-2000' />
@@ -36,41 +39,67 @@ function SlideSwiper({
             freeMode={swiperConfig.freeMode ?? true}
             className='pb-12'
           >
-            {slides.map((item, idx) => (
-              <SwiperSlide key={idx}>
-                <NavLink to={item.linkProduct} className='group block h-full'>
-                  <article className='flex h-full flex-col rounded-2xl border border-gray-100 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl '>
-                    {/* Image */}
-                    <div className='relative overflow-hidden'>
-                      <div className='flex justify-center items-center'>
-                        <img
-                          src={item.slideContent}
-                          alt={item.slideName}
-                          loading='lazy'
-                          className='h-1/2 w-1/2  object-cover transition-transform duration-500 group-hover:scale-105'
-                        />
-                      </div>
-                      <div className='pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-gradient-to-t from-black/20 to-transparent' />
-                    </div>
+            {slides.map((item, idx) => {
+              // const external = isExternal(item.linkProduct)
 
-                    {/* Content */}
-                    <div className='flex flex-1 flex-col p-6'>
-                      <h4 className='text-xl font-semibold font-roboto text-gray-800 line-clamp-1 transition-colors duration-200 group-hover:text-blue-600'>
-                        {item.slideName}
-                      </h4>
-                      <p className='mt-3 font-sm font-roboto flex-grow text-gray-600 line-clamp-2'>
-                        {item.slideDescription}
-                      </p>
+              const Card = (
+                <article className='flex h-full flex-col rounded-2xl border border-gray-100 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl'>
+                  {/* Image */}
+                  <div className='relative overflow-hidden'>
+                    <div className='flex items-center justify-center'>
+                      <img
+                        src={item.slideContent}
+                        alt={item.slideName}
+                        loading='lazy'
+                        className='w-1/2 h-1/2 object-contain transition-transform duration-500 group-hover:scale-105'
+                      />
                     </div>
-                  </article>
-                </NavLink>
-              </SwiperSlide>
-            ))}
+                    <div className='pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-gradient-to-t from-black/20 to-transparent' />
+                  </div>
+
+                  {/* Content */}
+                  <div className='flex flex-1 flex-col p-6'>
+                    <h4 className='text-xl font-roboto font-semibold text-gray-800 line-clamp-1 transition-colors duration-200 group-hover:text-blue-600'>
+                      {item.slideName}
+                    </h4>
+                    <p className='mt-3 flex-grow font-roboto text-gray-600 line-clamp-2'>
+                      {item.slideDescription}
+                    </p>
+                  </div>
+                </article>
+              )
+
+              return (
+                <SwiperSlide key={idx}>
+                  {/* {external ? (
+                    <a
+                      href={item.linkProduct}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='group block h-full'
+                      title={item.slideName}
+                    >
+                      {Card}
+                    </a>
+                  ) : ( */}
+                  <NavLink
+                    to={item.linkProduct}
+                    // target='_blank'
+                    rel='noopener noreferrer'
+                    className='group block h-full'
+                    title={item.slideName}
+                  >
+                    {Card}
+                  </NavLink>
+                  {/* )} */}
+                </SwiperSlide>
+              )
+            })}
           </Swiper>
         </div>
       </div>
 
-      {/* Keyframes riêng, ngắn gọn */}
+      {/* Keyframes */}
       <style>{`
         @keyframes blob {
           0% { transform: translate(0,0) scale(1); }
