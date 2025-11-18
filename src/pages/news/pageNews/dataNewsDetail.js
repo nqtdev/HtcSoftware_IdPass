@@ -9,7 +9,7 @@ const data = [
   {
     id: '1',
     title: 'Ra mắt Hiệp hội Dữ liệu Quốc gia',
-    imageA: imgModal1A,
+    image: imgModal1A,
     imageB: imgModal1B,
     imageC: imgModal1C,
     sectionsA: [
@@ -69,7 +69,7 @@ const data = [
   {
     id: '2',
     title: 'Bộ Công an công bố giải pháp định danh, truy xuất hàng giả trên VNeID',
-    imageA: imgModal2A,
+    image: imgModal2A,
     imageB: imgModal2B,
     imageC: imgModal2C,
     sectionsA: [
